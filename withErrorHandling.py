@@ -8,5 +8,10 @@ def leapYear(a):
 	else:
 		print("Year is not a Leap Year")
 
-val = input("Enter a number = ")
-leapYear(int(val));
+while True:
+	try:
+		val = input("Enter a number = ")
+		leapYear(int(val));
+		break
+	except ValueError:
+		print("That is not a number.")
